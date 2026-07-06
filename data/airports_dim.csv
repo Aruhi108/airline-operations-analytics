@@ -1,0 +1,10 @@
+airport_code,city,region,hub_size
+JFK,New York,Northeast,Large
+LAX,Los Angeles,West,Large
+ORD,Chicago,Midwest,Large
+ATL,Atlanta,South,Large
+DFW,Dallas,South,Large
+DEN,Denver,West,Medium
+SEA,Seattle,West,Medium
+MIA,Miami,South,Medium
+BOS,Boston,Northeast,Medium
