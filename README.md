@@ -5,6 +5,18 @@ End-to-end data analytics project analyzing 12,000 flights across 6 airlines and
 **Live dashboard:** [Open on Streamlit](https://airline-operations-analytics-gvk82ud5cg3re7g6xp6evt.streamlit.app/)
 
 ---
+## Dashboard Preview
+
+**Power BI:**
+
+![Power BI Dashboard](images/airline_powerBi_dashboard.png)
+
+**Streamlit (live):**
+
+![Streamlit 1](images/airline_streamlite_1.png)
+![Streamlit 2](images/airline_streamlite_2.png)
+![Streamlit 3](images/airline_streamlite_3.png)
+
 
 ## Business Problem
 Airline operations leadership wants to know: where is on-time performance actually breaking down, which routes/regions drive revenue, and does flight delay really hurt customer satisfaction? This project answers all three with a full SQL + Python + dashboard workflow.
@@ -17,17 +29,7 @@ Airline operations leadership wants to know: where is on-time performance actual
 
 One row = one flight. Key columns: airline, route, delay minutes, cancellation info, revenue, load factor, satisfaction score. Full column dictionary is in the code comments (`notebooks/01_data_cleaning.py`).
 
-## Dashboard Preview
 
-**Streamlit (live):**
-
-![Streamlit 1](images/airline_streamlite_1.png)
-![Streamlit 2](images/airline_streamlite_2.png)
-![Streamlit 3](images/airline_streamlite_3.png)
-
-**Power BI:**
-
-![Power BI Dashboard](images/airline_powerBi_dashboard.png)
 
 ## Tools
 SQL (PostgreSQL/SQLite) · Python (Pandas, NumPy) · Matplotlib/Plotly · Power BI · Streamlit
@@ -75,4 +77,16 @@ streamlit run app.py
 - Automated pipeline with Airflow
 
 ## Project Structure
+
+airline-operations-analytics/
+├── data/            # raw, cleaned, dimension CSVs + SQLite db
+├── sql/             # schema + analysis queries
+├── notebooks/       # data generation, cleaning, EDA, db build scripts
+├── dashboard/       # Power BI design spec
+├── images/          # charts + dashboard screenshots
+├── reports/         # insights, resume content, interview prep, CSV exports
+├── app.py           # Streamlit dashboard
+├── README.md
+├── requirements.txt
+└── LICENSE
 
